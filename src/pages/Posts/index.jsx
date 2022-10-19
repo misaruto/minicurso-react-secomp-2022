@@ -1,6 +1,4 @@
 import Post from '../../components/Post';
-
-
 let posts = [
   {
     post: {
@@ -59,12 +57,34 @@ let posts = [
       },
     },
   },
+  {
+    post: {
+      title: 'Lorem ipsum',
+      description: 'Lorem ipsum',
+      body: {
+        type: 'text',
+        content:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veniam. Repellat, natus totam exercitationem itaque rerum quam soluta mollitia dolore tempore alias odit sapiente possimus expedita animi asperiores placeat fugit!.',
+      },
+    },
+    user: {
+      userName: 'teste',
+      userProfile: {
+        name: 'testestes',
+        picture: {},
+      },
+    },
+  },
 ];
 
 const Posts = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ width: '80%' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+      <div
+        style={{
+          width: '30%',
+        }}
+      >
         {posts.map(({ post, user }, index) => (
           <Post key={`post-${index}`} user={user} post={post} />
         ))}
