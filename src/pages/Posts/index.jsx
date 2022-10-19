@@ -4,6 +4,11 @@ let posts = [
     post: {
       title: 'Olá mundo',
       description: "Hello word, it's a good day to React",
+      information: {
+        totalLikes: 15,
+        totalRePosted: 2,
+        totalComments: 10,
+      },
       body: {
         type: 'text',
         content: 'Olá galera isso aqui é um teste de um post.',

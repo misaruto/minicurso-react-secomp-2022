@@ -1,5 +1,6 @@
+import { UserProfileImage } from '../User/UserProfileImage';
 import { PostContent } from './PostContent';
-import PostHeader from './PostHeader';
+import { PostFooter } from './PostFooter';
 import styles from './styles.module.scss';
 const Post = ({ user, post }) => {
   const {
@@ -12,18 +13,20 @@ const Post = ({ user, post }) => {
   const {
     title: postTitle,
     body: { type, content },
+    information: postInfo,
   } = post;
   return (
-    <div className={styles.postContainer}>
-      <PostContent
-        postTitle={postTitle}
-        userProfileImageUri={uri}
-        userName={userName}
-        type={type}
-      >
-        {content}
-      </PostContent>
-    </div>
+    <article className={styles.postContainer}>
+      <div className={styles.postProfile}>
+        <UserProfileImage profileImgUri={uri} />
+      </div>
+      <div>
+        <PostContent postTitle={postTitle} userName={userName} type={type}>
+          {content}
+        </PostContent>
+        <PostFooter {...postInfo} />
+      </div>
+    </article>
   );
 };
 
