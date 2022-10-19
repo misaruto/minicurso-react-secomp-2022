@@ -1,32 +1,74 @@
 import Post from '../../components/Post';
 
-let user = {
-  userName: 'misaruto',
-  userProfile: {
-    name: 'Misael Guilhardes de Freitas',
-    picture: {
-      uri: 'https://avatars.githubusercontent.com/u/40955371',
-    },
-  },
-};
 
 let posts = [
   {
-    title: 'Olá mundo',
-    description: "Hello word, it's a good day to React",
-    body: {
-      type: 'text',
-      content: 'Olá galera isso aqui é um teste de um post.',
+    post: {
+      title: 'Olá mundo',
+      description: "Hello word, it's a good day to React",
+      body: {
+        type: 'text',
+        content: 'Olá galera isso aqui é um teste de um post.',
+      },
+    },
+    user: {
+      userName: 'misaruto',
+      userProfile: {
+        name: 'Misael Guilhardes de Freitas',
+        picture: {
+          uri: 'https://avatars.githubusercontent.com/u/40955371',
+        },
+      },
+    },
+  },
+  {
+    post: {
+      title: 'Lorem ipsum',
+      description: 'Lorem ipsum',
+      body: {
+        type: 'text',
+        content:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veniam. Repellat, natus totam exercitationem itaque rerum quam soluta mollitia dolore tempore alias odit sapiente possimus expedita animi asperiores placeat fugit!.',
+      },
+    },
+    user: {
+      userName: 'misaruto',
+      userProfile: {
+        name: 'Misael Guilhardes de Freitas',
+        picture: {
+          uri: 'https://avatars.githubusercontent.com/u/40955371',
+        },
+      },
+    },
+  },
+  {
+    post: {
+      title: 'Lorem ipsum',
+      description: 'Lorem ipsum',
+      body: {
+        type: 'text',
+        content:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veniam. Repellat, natus totam exercitationem itaque rerum quam soluta mollitia dolore tempore alias odit sapiente possimus expedita animi asperiores placeat fugit!.',
+      },
+    },
+    user: {
+      userName: 'teste',
+      userProfile: {
+        name: 'testestes',
+        picture: {},
+      },
     },
   },
 ];
 
 const Posts = () => {
   return (
-    <div>
-      {posts.map((post, index) => (
-        <Post key={`post-${index}`} user={user} post={post} />
-      ))}
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ width: '80%' }}>
+        {posts.map(({ post, user }, index) => (
+          <Post key={`post-${index}`} user={user} post={post} />
+        ))}
+      </div>
     </div>
   );
 };
