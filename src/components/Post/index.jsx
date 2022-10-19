@@ -15,12 +15,14 @@ const Post = ({ user, post }) => {
   } = post;
   return (
     <div className={styles.postContainer}>
-      <PostHeader
+      <PostContent
         postTitle={postTitle}
         userProfileImageUri={uri}
         userName={userName}
-      />
-      <PostContent type={type}>{content}</PostContent>
+        type={type}
+      >
+        {content}
+      </PostContent>
     </div>
   );
 };

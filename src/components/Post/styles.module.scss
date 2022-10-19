@@ -1,8 +1,12 @@
+@import "src/utils/constants.scss";
+
 .postContainer {
   width: 100%;
+  min-height: 1.3rem;
   display: grid;
-  grid-template-rows: 72px auto;
+  grid-template-rows: auto auto;
   justify-content: start;
+  margin-bottom: 16px;
 }
 
 .postHeaderContainer {
@@ -11,16 +15,30 @@
   grid-template-columns: 64px auto;
   justify-content: start;
   align-items: center;
+}
 
-  .titleContainer {
+.postContentContainer {
+  display: grid;
+  grid-template-columns: 64px auto;
+
+  .contentContainer {
     display: grid;
-    grid-template-rows: auto 14px;
-    justify-content: start;
-    align-items: center;
+    grid-template-rows: auto auto;
 
-    .postTitle {
-      font-size: 18px;
+    .titleContainer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: start;
+      align-items: center;
+
+      .postTitle {
+        font-size: $titleFontSize;
+      }
+    }
+
+    .postContent{
+      overflow-y: auto;
     }
   }
-
 }
