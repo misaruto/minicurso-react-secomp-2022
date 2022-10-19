@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "meganrogge.template-string-converter",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense"
+  ]
+}

@@ -1,0 +1,26 @@
+.postContainer {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 72px auto;
+  justify-content: start;
+}
+
+.postHeaderContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64px auto;
+  justify-content: start;
+  align-items: center;
+
+  .titleContainer {
+    display: grid;
+    grid-template-rows: auto 14px;
+    justify-content: start;
+    align-items: center;
+
+    .postTitle {
+      font-size: 18px;
+    }
+  }
+
+}
