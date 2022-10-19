@@ -4,7 +4,7 @@ import { UserName } from './UserName';
 export const UserProfileImage = ({ profileImgUri, userName }) => {
   return (
     <div className={styles.userProfileImageContainer}>
-      {!profileImg ? (
+      {!profileImgUri ? (
         <img src={profileImg} alt="Default user image" />
       ) : (
         <img src={profileImgUri} alt={userName} />
