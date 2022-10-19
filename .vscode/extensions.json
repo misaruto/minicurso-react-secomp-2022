@@ -6,6 +6,7 @@
     "formulahendry.auto-close-tag",
     "formulahendry.auto-complete-tag",
     "formulahendry.auto-rename-tag",
-    "christian-kohler.path-intellisense"
+    "christian-kohler.path-intellisense",
+    "tomoki1207.pdf"
   ]
 }
