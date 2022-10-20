@@ -3,7 +3,6 @@ let posts = [
   {
     post: {
       title: 'Olá mundo',
-      description: "Hello word, it's a good day to React",
       information: {
         totalLikes: 15,
         totalRePosted: 2,
@@ -27,7 +26,6 @@ let posts = [
   {
     post: {
       title: 'Lorem ipsum',
-      description: 'Lorem ipsum',
       body: {
         type: 'text',
         content:
@@ -47,7 +45,6 @@ let posts = [
   {
     post: {
       title: 'Lorem ipsum',
-      description: 'Lorem ipsum',
       body: {
         type: 'text',
         content:
