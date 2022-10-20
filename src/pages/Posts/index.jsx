@@ -81,7 +81,14 @@ let posts = [
 
 const Posts = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+    <div
+      style={{
+        maxWidth: '100vw',
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: 8,
+      }}
+    >
       <div
         style={{
           width: '30%',
