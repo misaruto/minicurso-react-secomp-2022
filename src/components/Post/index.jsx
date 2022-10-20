@@ -20,7 +20,7 @@ const Post = ({ user, post }) => {
       <div className={styles.postProfile}>
         <UserProfileImage profileImgUri={uri} />
       </div>
-      <div>
+      <div className={styles.postContentFooterContainer}>
         <PostContent postTitle={postTitle} userName={userName} type={type}>
           {content}
         </PostContent>
